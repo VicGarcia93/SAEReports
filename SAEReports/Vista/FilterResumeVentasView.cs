@@ -22,6 +22,11 @@ namespace SAEReports.Vista
             this.coordinatorController = coordinatorController;
         }
 
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
       
     }
 }
