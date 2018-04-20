@@ -16,6 +16,7 @@ namespace SAEReports.Controlador
         VentasView ventasView;
         BussinesLogicModel bussinesLogicModel;
         FilterResumeVentasView filterResumeVentas;
+        InventariosView inventariosView;
 
         public void setVistaPrincipal(VistaPrincipal vistaPrincipal)
         {
@@ -40,6 +41,10 @@ namespace SAEReports.Controlador
         public VentasView getVentasView()
         {
             return ventasView;
+        }
+        public void SetInventariosView(InventariosView inventariosView)
+        {
+            this.inventariosView = inventariosView;
         }
 
         public void setBussinesLogicModel(BussinesLogicModel bussinesLogicModel)
@@ -86,7 +91,28 @@ namespace SAEReports.Controlador
         {
             filterResumeVentas.Show();
         }
+        public void HideFilterResumeVentas()
+        {
+            filterResumeVentas.Hide();
+        }
 
+        public void ExitApplication()
+        {
+            vistaPrincipal.Dispose();
+        }
+
+        public void ShowInventariosView()
+        {
+            Panel presentationPanel = ((Panel)vistaPrincipal.Controls["presentationPanel"]);
+            if (presentationPanel.Controls.Count > 0)
+                presentationPanel.Controls.RemoveAt(0);
+            inventariosView.TopLevel = false;
+            inventariosView.FormBorderStyle = FormBorderStyle.None;
+            inventariosView.Dock = DockStyle.Fill;
+            presentationPanel.Controls.Add(inventariosView);
+            presentationPanel.Tag = inventariosView;
+            inventariosView.Show();
+        }
     
     }
 }

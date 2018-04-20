@@ -17,3 +17,5 @@ C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\bin\
 C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.exe
 C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.pdb
 C:\Users\Victhor\documents\visual studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.Vista.FilterResumeVentasView.resources
+C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.Src.Strings.resources
+C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.Vista.InventariosView.resources

@@ -32,5 +32,15 @@ namespace SAEReports.Vista
         {
             coordinatorController.showVentasView();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            coordinatorController.ExitApplication();
+        }
+
+        private void btnInventarios_Click(object sender, EventArgs e)
+        {
+            coordinatorController.ShowInventariosView();
+        }
     }
 }
