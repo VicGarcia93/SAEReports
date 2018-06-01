@@ -11,5 +11,9 @@ namespace SAEReports.Modelo
         {
 
         }
+        public void DetalladoFacturas(DetalladoFacturasVO detalladoFacturas)
+        {
+
+        }
     }
 }

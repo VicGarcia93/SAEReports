@@ -11,8 +11,9 @@ namespace SAEReports.Modelo
         private int cliente;
         private String nombreCliente;
         private String status;
-        private String fechaElaboracion;
-        private String almacen;
+        private String fechaElaboracionInicial;
+        private String fechaElaboracionFinal;
+        private int almacen;
 
         public void SetCveDoc(String cveDoc)
         {
@@ -40,6 +41,34 @@ namespace SAEReports.Modelo
         public void SetStatus(String status)
         {
             this.status = status;
+        }
+        public String GetStatus()
+        {
+            return status;
+        }
+        public void SetFechaElaboracionInicial(String fechaElaboracionInicial)
+        {
+            this.fechaElaboracionInicial = fechaElaboracionInicial;
+        }
+        public String GetFechaElaboracionInicial()
+        {
+            return fechaElaboracionInicial;
+        }
+        public void SetFechaElaboracionFinal(String fechaElaboracionFinal)
+        {
+            this.fechaElaboracionFinal = fechaElaboracionFinal;
+        }
+        public String GetFechaElaboracionFinal()
+        {
+            return fechaElaboracionFinal;
+        }
+        public void SetAlmacen(int almacen)
+        {
+            this.almacen = almacen;
+        }
+        public int GetAlmacen()
+        {
+            return almacen;
         }
     
     }

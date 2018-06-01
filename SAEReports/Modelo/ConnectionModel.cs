@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using FirebirdSql.Data.FirebirdClient;
+using System.Windows.Forms;
 
 namespace SAEReports.Modelo
 {
@@ -13,7 +14,7 @@ namespace SAEReports.Modelo
         {
             FbConnectionStringBuilder conStrBuil = new FbConnectionStringBuilder();
             conStrBuil.ServerType = FbServerType.Default;
-            conStrBuil.Database = "C:\\Users\\Victhor\\Documents\\Visual Studio 2013\\Projects\\SAEReport\\SAEReports\\src\\SAE70EMPRE01.FDB";
+            conStrBuil.Database = "C:\\Users\\Usuario 232\\SAE70EMPRE03.FDB";
             conStrBuil.UserID = "SYSDBA";
             conStrBuil.Password = "masterkey";
             fbConnection = new FbConnection(conStrBuil.ToString());
@@ -22,7 +23,8 @@ namespace SAEReports.Modelo
                 if (fbConnection != null)
                     fbConnection.Close();
                 fbConnection.Open();
-                
+                Console.WriteLine("Conectado!");
+               
             }
             catch (Exception ex)
             {

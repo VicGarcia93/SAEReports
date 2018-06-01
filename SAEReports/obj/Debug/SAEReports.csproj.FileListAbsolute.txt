@@ -19,3 +19,25 @@ C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\
 C:\Users\Victhor\documents\visual studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.Vista.FilterResumeVentasView.resources
 C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.Src.Strings.resources
 C:\Users\Victhor\Documents\Visual Studio 2013\Projects\SAEReport\SAEReports\obj\Debug\SAEReports.Vista.InventariosView.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\SAEReports.exe.config
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.exe
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.pdb
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\SAEReports.exe
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\SAEReports.pdb
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\EntityFramework.dll
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\EntityFramework.xml
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.csprojResolveAssemblyReference.cache
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Form1.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Properties.Resources.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Src.Strings.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.FilterResumeVentasView.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.InventariosView.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.ReportView.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.ResumeView.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.VentasView.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.VistaPrincipal.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.csproj.GenerateResource.Cache

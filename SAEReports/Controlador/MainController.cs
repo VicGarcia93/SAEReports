@@ -7,6 +7,7 @@ using SAEReports.Modelo;
 using System.Windows.Forms;
 
 
+
 namespace SAEReports.Controlador
 {
     class MainController
@@ -60,6 +61,9 @@ namespace SAEReports.Controlador
 
             coordinatorController.showResumeView();
             mainView.ShowDialog();
+
+           
+            
             
 
         }
