@@ -113,13 +113,10 @@ namespace SAEReports.Controlador
             presentationPanel.Tag = inventariosView;
             inventariosView.Show();
         }
-        public void GetFacturasDetalladoReport()
+        public void GetFacturasDetalladoReport(DetalladoFacturasVO detalladadoFacturasVo)
         {
-            DetalladoFacturasVO detalladoFacturasVo = new DetalladoFacturasVO();
+            bussinesLogicModel.DetalladoFacturas(detalladadoFacturasVo);
 
-            //Datos del objeto DetalladoFacturasVO
-
-            bussinesLogicModel.DetalladoFacturas(detalladoFacturasVo);
         }
     
     }

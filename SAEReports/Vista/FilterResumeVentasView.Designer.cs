@@ -32,19 +32,19 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtAlmacen = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtVendeFin = new System.Windows.Forms.TextBox();
+            this.txtVendeIni = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCveClienteFin = new System.Windows.Forms.TextBox();
+            this.txtClientesIni = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,9 +53,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCveDocFinal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCveDocInicial = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,37 +68,37 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbContado = new System.Windows.Forms.CheckBox();
+            this.chbContabilizado = new System.Windows.Forms.CheckBox();
+            this.chbCostos = new System.Windows.Forms.CheckBox();
+            this.chbDesglose = new System.Windows.Forms.CheckBox();
+            this.chbGrupo = new System.Windows.Forms.CheckBox();
+            this.chbKits = new System.Windows.Forms.CheckBox();
+            this.chbServicios = new System.Windows.Forms.CheckBox();
+            this.chbProductos = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbOrdenaDespues = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbOrdenaPrimero = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtGrupoProd = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtDescrProd = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtLineaProd = new System.Windows.Forms.TextBox();
+            this.txtCveProducto = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFinal = new System.Windows.Forms.DateTimePicker();
+            this.dtpInicial = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbFechaSelec = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -145,7 +145,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button9);
-            this.panel3.Controls.Add(this.textBox7);
+            this.panel3.Controls.Add(this.txtAlmacen);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Location = new System.Drawing.Point(11, 308);
             this.panel3.Name = "panel3";
@@ -161,12 +161,12 @@
             this.button9.Text = "Q";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtAlmacen
             // 
-            this.textBox7.Location = new System.Drawing.Point(212, 34);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 20);
-            this.textBox7.TabIndex = 6;
+            this.txtAlmacen.Location = new System.Drawing.Point(212, 34);
+            this.txtAlmacen.Name = "txtAlmacen";
+            this.txtAlmacen.Size = new System.Drawing.Size(133, 20);
+            this.txtAlmacen.TabIndex = 6;
             // 
             // label10
             // 
@@ -184,14 +184,14 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.txtVendeFin);
+            this.panel2.Controls.Add(this.txtVendeIni);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtCveClienteFin);
+            this.panel2.Controls.Add(this.txtClientesIni);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -220,19 +220,19 @@
             this.button8.Text = "Q";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtVendeFin
             // 
-            this.textBox5.Location = new System.Drawing.Point(340, 79);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(128, 20);
-            this.textBox5.TabIndex = 12;
+            this.txtVendeFin.Location = new System.Drawing.Point(340, 79);
+            this.txtVendeFin.Name = "txtVendeFin";
+            this.txtVendeFin.Size = new System.Drawing.Size(128, 20);
+            this.txtVendeFin.TabIndex = 12;
             // 
-            // textBox6
+            // txtVendeIni
             // 
-            this.textBox6.Location = new System.Drawing.Point(340, 41);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(128, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtVendeIni.Location = new System.Drawing.Point(340, 41);
+            this.txtVendeIni.Name = "txtVendeIni";
+            this.txtVendeIni.Size = new System.Drawing.Size(128, 20);
+            this.txtVendeIni.TabIndex = 11;
             // 
             // label8
             // 
@@ -272,19 +272,19 @@
             this.button5.Text = "Q";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtCveClienteFin
             // 
-            this.textBox4.Location = new System.Drawing.Point(68, 81);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(128, 20);
-            this.textBox4.TabIndex = 6;
+            this.txtCveClienteFin.Location = new System.Drawing.Point(68, 81);
+            this.txtCveClienteFin.Name = "txtCveClienteFin";
+            this.txtCveClienteFin.Size = new System.Drawing.Size(128, 20);
+            this.txtCveClienteFin.TabIndex = 6;
             // 
-            // textBox3
+            // txtClientesIni
             // 
-            this.textBox3.Location = new System.Drawing.Point(68, 43);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(128, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtClientesIni.Location = new System.Drawing.Point(68, 43);
+            this.txtClientesIni.Name = "txtClientesIni";
+            this.txtClientesIni.Size = new System.Drawing.Size(128, 20);
+            this.txtClientesIni.TabIndex = 5;
             // 
             // label7
             // 
@@ -344,9 +344,9 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtCveDocFinal);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtCveDocInicial);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Location = new System.Drawing.Point(11, 16);
@@ -372,12 +372,12 @@
             this.button3.Text = "Q";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtCveDocFinal
             // 
-            this.textBox2.Location = new System.Drawing.Point(309, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtCveDocFinal.Location = new System.Drawing.Point(309, 98);
+            this.txtCveDocFinal.Name = "txtCveDocFinal";
+            this.txtCveDocFinal.Size = new System.Drawing.Size(159, 20);
+            this.txtCveDocFinal.TabIndex = 4;
             // 
             // label2
             // 
@@ -389,12 +389,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Hasta";
             // 
-            // textBox1
+            // txtCveDocInicial
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtCveDocInicial.Location = new System.Drawing.Point(92, 98);
+            this.txtCveDocInicial.Name = "txtCveDocInicial";
+            this.txtCveDocInicial.Size = new System.Drawing.Size(134, 20);
+            this.txtCveDocInicial.TabIndex = 2;
             // 
             // label1
             // 
@@ -536,107 +536,107 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.checkBox8);
-            this.panel10.Controls.Add(this.checkBox7);
-            this.panel10.Controls.Add(this.checkBox6);
-            this.panel10.Controls.Add(this.checkBox5);
-            this.panel10.Controls.Add(this.checkBox4);
-            this.panel10.Controls.Add(this.checkBox3);
-            this.panel10.Controls.Add(this.checkBox2);
-            this.panel10.Controls.Add(this.checkBox1);
+            this.panel10.Controls.Add(this.chbContado);
+            this.panel10.Controls.Add(this.chbContabilizado);
+            this.panel10.Controls.Add(this.chbCostos);
+            this.panel10.Controls.Add(this.chbDesglose);
+            this.panel10.Controls.Add(this.chbGrupo);
+            this.panel10.Controls.Add(this.chbKits);
+            this.panel10.Controls.Add(this.chbServicios);
+            this.panel10.Controls.Add(this.chbProductos);
             this.panel10.Controls.Add(this.label21);
             this.panel10.Location = new System.Drawing.Point(17, 364);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(495, 116);
             this.panel10.TabIndex = 3;
             // 
-            // checkBox8
+            // chbContado
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(404, 68);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(88, 20);
-            this.checkBox8.TabIndex = 20;
-            this.checkBox8.Text = "De contado";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.chbContado.AutoSize = true;
+            this.chbContado.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbContado.Location = new System.Drawing.Point(404, 68);
+            this.chbContado.Name = "chbContado";
+            this.chbContado.Size = new System.Drawing.Size(88, 20);
+            this.chbContado.TabIndex = 20;
+            this.chbContado.Text = "De contado";
+            this.chbContado.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // chbContabilizado
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(286, 68);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(106, 20);
-            this.checkBox7.TabIndex = 19;
-            this.checkBox7.Text = "Contabilizado";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chbContabilizado.AutoSize = true;
+            this.chbContabilizado.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbContabilizado.Location = new System.Drawing.Point(286, 68);
+            this.chbContabilizado.Name = "chbContabilizado";
+            this.chbContabilizado.Size = new System.Drawing.Size(106, 20);
+            this.chbContabilizado.TabIndex = 19;
+            this.chbContabilizado.Text = "Contabilizado";
+            this.chbContabilizado.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chbCostos
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(149, 68);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(86, 20);
-            this.checkBox6.TabIndex = 18;
-            this.checkBox6.Text = "Con costos";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chbCostos.AutoSize = true;
+            this.chbCostos.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbCostos.Location = new System.Drawing.Point(149, 68);
+            this.chbCostos.Name = "chbCostos";
+            this.chbCostos.Size = new System.Drawing.Size(86, 20);
+            this.chbCostos.TabIndex = 18;
+            this.chbCostos.Text = "Con costos";
+            this.chbCostos.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chbDesglose
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(24, 68);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(99, 20);
-            this.checkBox5.TabIndex = 17;
-            this.checkBox5.Text = "Con desglose";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chbDesglose.AutoSize = true;
+            this.chbDesglose.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbDesglose.Location = new System.Drawing.Point(24, 68);
+            this.chbDesglose.Name = "chbDesglose";
+            this.chbDesglose.Size = new System.Drawing.Size(99, 20);
+            this.chbDesglose.TabIndex = 17;
+            this.chbDesglose.Text = "Con desglose";
+            this.chbDesglose.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chbGrupo
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(404, 31);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(67, 20);
-            this.checkBox4.TabIndex = 16;
-            this.checkBox4.Text = "Grupos";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chbGrupo.AutoSize = true;
+            this.chbGrupo.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbGrupo.Location = new System.Drawing.Point(404, 31);
+            this.chbGrupo.Name = "chbGrupo";
+            this.chbGrupo.Size = new System.Drawing.Size(67, 20);
+            this.chbGrupo.TabIndex = 16;
+            this.chbGrupo.Text = "Grupos";
+            this.chbGrupo.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chbKits
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(286, 31);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(51, 20);
-            this.checkBox3.TabIndex = 15;
-            this.checkBox3.Text = "Kits";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chbKits.AutoSize = true;
+            this.chbKits.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbKits.Location = new System.Drawing.Point(286, 31);
+            this.chbKits.Name = "chbKits";
+            this.chbKits.Size = new System.Drawing.Size(51, 20);
+            this.chbKits.TabIndex = 15;
+            this.chbKits.Text = "Kits";
+            this.chbKits.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chbServicios
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(149, 31);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(77, 20);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "Servicios";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chbServicios.AutoSize = true;
+            this.chbServicios.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbServicios.Location = new System.Drawing.Point(149, 31);
+            this.chbServicios.Name = "chbServicios";
+            this.chbServicios.Size = new System.Drawing.Size(77, 20);
+            this.chbServicios.TabIndex = 14;
+            this.chbServicios.Text = "Servicios";
+            this.chbServicios.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chbProductos
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(24, 31);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 20);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Productos";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbProductos.AutoSize = true;
+            this.chbProductos.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbProductos.Location = new System.Drawing.Point(24, 31);
+            this.chbProductos.Name = "chbProductos";
+            this.chbProductos.Size = new System.Drawing.Size(82, 20);
+            this.chbProductos.TabIndex = 13;
+            this.chbProductos.Text = "Productos";
+            this.chbProductos.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -652,9 +652,9 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.comboBox3);
+            this.panel9.Controls.Add(this.cmbOrdenaDespues);
             this.panel9.Controls.Add(this.label20);
-            this.panel9.Controls.Add(this.comboBox2);
+            this.panel9.Controls.Add(this.cmbOrdenaPrimero);
             this.panel9.Controls.Add(this.label19);
             this.panel9.Controls.Add(this.label18);
             this.panel9.Location = new System.Drawing.Point(17, 281);
@@ -662,13 +662,13 @@
             this.panel9.Size = new System.Drawing.Size(496, 75);
             this.panel9.TabIndex = 2;
             // 
-            // comboBox3
+            // cmbOrdenaDespues
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(337, 36);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(143, 21);
-            this.comboBox3.TabIndex = 11;
+            this.cmbOrdenaDespues.FormattingEnabled = true;
+            this.cmbOrdenaDespues.Location = new System.Drawing.Point(337, 36);
+            this.cmbOrdenaDespues.Name = "cmbOrdenaDespues";
+            this.cmbOrdenaDespues.Size = new System.Drawing.Size(143, 21);
+            this.cmbOrdenaDespues.TabIndex = 11;
             // 
             // label20
             // 
@@ -680,13 +680,13 @@
             this.label20.TabIndex = 10;
             this.label20.Text = "Despúes por";
             // 
-            // comboBox2
+            // cmbOrdenaPrimero
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(105, 36);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(143, 21);
-            this.comboBox2.TabIndex = 9;
+            this.cmbOrdenaPrimero.FormattingEnabled = true;
+            this.cmbOrdenaPrimero.Location = new System.Drawing.Point(105, 36);
+            this.cmbOrdenaPrimero.Name = "cmbOrdenaPrimero";
+            this.cmbOrdenaPrimero.Size = new System.Drawing.Size(143, 21);
+            this.cmbOrdenaPrimero.TabIndex = 9;
             // 
             // label19
             // 
@@ -712,12 +712,12 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.textBox11);
+            this.panel8.Controls.Add(this.txtGrupoProd);
             this.panel8.Controls.Add(this.label22);
-            this.panel8.Controls.Add(this.textBox10);
+            this.panel8.Controls.Add(this.txtDescrProd);
             this.panel8.Controls.Add(this.label17);
-            this.panel8.Controls.Add(this.textBox9);
-            this.panel8.Controls.Add(this.textBox8);
+            this.panel8.Controls.Add(this.txtLineaProd);
+            this.panel8.Controls.Add(this.txtCveProducto);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Controls.Add(this.label15);
             this.panel8.Controls.Add(this.label14);
@@ -726,12 +726,12 @@
             this.panel8.Size = new System.Drawing.Size(498, 126);
             this.panel8.TabIndex = 1;
             // 
-            // textBox11
+            // txtGrupoProd
             // 
-            this.textBox11.Location = new System.Drawing.Point(100, 97);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(151, 20);
-            this.textBox11.TabIndex = 14;
+            this.txtGrupoProd.Location = new System.Drawing.Point(100, 97);
+            this.txtGrupoProd.Name = "txtGrupoProd";
+            this.txtGrupoProd.Size = new System.Drawing.Size(151, 20);
+            this.txtGrupoProd.TabIndex = 14;
             // 
             // label22
             // 
@@ -743,12 +743,12 @@
             this.label22.TabIndex = 13;
             this.label22.Text = "Grupo";
             // 
-            // textBox10
+            // txtDescrProd
             // 
-            this.textBox10.Location = new System.Drawing.Point(100, 68);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(372, 20);
-            this.textBox10.TabIndex = 12;
+            this.txtDescrProd.Location = new System.Drawing.Point(100, 68);
+            this.txtDescrProd.Name = "txtDescrProd";
+            this.txtDescrProd.Size = new System.Drawing.Size(372, 20);
+            this.txtDescrProd.TabIndex = 12;
             // 
             // label17
             // 
@@ -760,19 +760,19 @@
             this.label17.TabIndex = 11;
             this.label17.Text = "Descripción";
             // 
-            // textBox9
+            // txtLineaProd
             // 
-            this.textBox9.Location = new System.Drawing.Point(321, 96);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(151, 20);
-            this.textBox9.TabIndex = 10;
+            this.txtLineaProd.Location = new System.Drawing.Point(321, 96);
+            this.txtLineaProd.Name = "txtLineaProd";
+            this.txtLineaProd.Size = new System.Drawing.Size(151, 20);
+            this.txtLineaProd.TabIndex = 10;
             // 
-            // textBox8
+            // txtCveProducto
             // 
-            this.textBox8.Location = new System.Drawing.Point(99, 33);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(151, 20);
-            this.textBox8.TabIndex = 9;
+            this.txtCveProducto.Location = new System.Drawing.Point(99, 33);
+            this.txtCveProducto.Name = "txtCveProducto";
+            this.txtCveProducto.Size = new System.Drawing.Size(151, 20);
+            this.txtCveProducto.TabIndex = 9;
             // 
             // label16
             // 
@@ -808,32 +808,32 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.dateTimePicker2);
-            this.panel7.Controls.Add(this.dateTimePicker1);
+            this.panel7.Controls.Add(this.dtpFinal);
+            this.panel7.Controls.Add(this.dtpInicial);
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.comboBox1);
+            this.panel7.Controls.Add(this.cmbFechaSelec);
             this.panel7.Controls.Add(this.label11);
             this.panel7.Location = new System.Drawing.Point(14, 18);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(501, 118);
             this.panel7.TabIndex = 0;
             // 
-            // dateTimePicker2
+            // dtpFinal
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(340, 74);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(85, 20);
-            this.dateTimePicker2.TabIndex = 5;
+            this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFinal.Location = new System.Drawing.Point(340, 74);
+            this.dtpFinal.Name = "dtpFinal";
+            this.dtpFinal.Size = new System.Drawing.Size(85, 20);
+            this.dtpFinal.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // dtpInicial
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(144, 74);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(85, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dtpInicial.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicial.Location = new System.Drawing.Point(144, 74);
+            this.dtpInicial.Name = "dtpInicial";
+            this.dtpInicial.Size = new System.Drawing.Size(85, 20);
+            this.dtpInicial.TabIndex = 4;
             // 
             // label13
             // 
@@ -856,11 +856,11 @@
             this.label12.Text = "Fecha inicial";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // comboBox1
+            // cmbFechaSelec
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbFechaSelec.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFechaSelec.FormattingEnabled = true;
+            this.cmbFechaSelec.Items.AddRange(new object[] {
             "Sin filtrar",
             "Selección manual",
             "Hoy",
@@ -881,10 +881,10 @@
             "Octubre",
             "Noviembre",
             "Diciembre"});
-            this.comboBox1.Location = new System.Drawing.Point(144, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(281, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cmbFechaSelec.Location = new System.Drawing.Point(144, 32);
+            this.cmbFechaSelec.Name = "cmbFechaSelec";
+            this.cmbFechaSelec.Size = new System.Drawing.Size(281, 24);
+            this.cmbFechaSelec.TabIndex = 1;
             // 
             // label11
             // 
@@ -985,59 +985,59 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCveDocFinal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCveDocInicial;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtAlmacen;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtVendeFin;
+        private System.Windows.Forms.TextBox txtVendeIni;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCveClienteFin;
+        private System.Windows.Forms.TextBox txtClientesIni;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtDescrProd;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtLineaProd;
+        private System.Windows.Forms.TextBox txtCveProducto;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFinal;
+        private System.Windows.Forms.DateTimePicker dtpInicial;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbFechaSelec;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chbContado;
+        private System.Windows.Forms.CheckBox chbContabilizado;
+        private System.Windows.Forms.CheckBox chbCostos;
+        private System.Windows.Forms.CheckBox chbDesglose;
+        private System.Windows.Forms.CheckBox chbGrupo;
+        private System.Windows.Forms.CheckBox chbKits;
+        private System.Windows.Forms.CheckBox chbServicios;
+        private System.Windows.Forms.CheckBox chbProductos;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbOrdenaDespues;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbOrdenaPrimero;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtGrupoProd;
         private System.Windows.Forms.Label label22;
     }
 }
