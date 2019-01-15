@@ -5,19 +5,21 @@ using System.Text;
 
 namespace SAEReports.Modelo
 {
-    class DetalladoFacturasVO
+    public class DetalladoFacturasVO
     {
         private String cveDocInicial;
         private String cveDocFinal;
-        private int clienteInicial;
-        private int clienteFinal;
+        private String clienteInicial;
+        private String clienteFinal;
         private String nombreCliente;
         private String status;
         private String fechaElaboracionInicial;
         private String fechaElaboracionFinal;
+        private String cveDocAnterior;
+        private String cveDocSiguiente;
         private int almacen;
-        private int cveVendeInicial;
-        private int cveVendeFinal;
+        private String cveVendeInicial;
+        private String cveVendeFinal;
         private String cveProducto;
         private String descripcionProd;
         private int grupoProducto;
@@ -48,18 +50,18 @@ namespace SAEReports.Modelo
         {
             return cveDocFinal;
         }
-        public void SetClienteInicial(int cliente){
+        public void SetClienteInicial(String cliente){
             this.clienteInicial = cliente;
         }
-        public int GetClienteInicial()
+        public String GetClienteInicial()
         {
             return clienteInicial;
         }
-        public void SetClienteFinal(int cliente)
+        public void SetClienteFinal(String cliente)
         {
             this.clienteFinal = cliente;
         }
-        public int GetClienteFinal()
+        public String GetClienteFinal()
         {
             return clienteFinal;
         }
@@ -104,19 +106,19 @@ namespace SAEReports.Modelo
         {
             return almacen;
         }
-        public void SetCveVendedorInicial(int cveVendeInicial)
+        public void SetCveVendedorInicial(String cveVendeInicial)
         {
             this.cveVendeInicial = cveVendeInicial;
         }
-        public int GetCveVendedorInicial()
+        public String GetCveVendedorInicial()
         {
             return cveVendeInicial;
         }
-        public void SetCveVendedorFinal(int cveVendeFinal)
+        public void SetCveVendedorFinal(String cveVendeFinal)
         {
             this.cveVendeFinal = cveVendeFinal;
         }
-        public int GetCveVendedorFinal()
+        public String GetCveVendedorFinal()
         {
             return cveVendeFinal;
         }
@@ -223,6 +225,22 @@ namespace SAEReports.Modelo
         public bool GetFiltroDesglose()
         {
             return filtroDesglose;
+        }
+        public void SetCveDocAnterior(String cveDocAnterior)
+        {
+            this.cveDocAnterior = cveDocAnterior;
+        }
+        public String GetCveDocAnterior()
+        {
+            return cveDocAnterior;
+        }
+        public void SetCveDocSiguiente(String cveDocSiguiente)
+        {
+            this.cveDocSiguiente = cveDocSiguiente;
+        }
+        public String GetCveDocSiguiente()
+        {
+            return cveDocSiguiente;
         }
     
     }

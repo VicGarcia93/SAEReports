@@ -5,6 +5,7 @@ using System.Text;
 using SAEReports.Vista;
 using SAEReports.Modelo;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace SAEReports.Controlador
 {
@@ -16,6 +17,7 @@ namespace SAEReports.Controlador
         VentasView ventasView;
         BussinesLogicModel bussinesLogicModel;
         FilterResumeVentasView filterResumeVentas;
+        FilterFacturasDetallado filterFacturasDetallado;
         InventariosView inventariosView;
 
         public void setVistaPrincipal(VistaPrincipal vistaPrincipal)
@@ -56,6 +58,10 @@ namespace SAEReports.Controlador
         {
             this.filterResumeVentas = filterResumeVentas;
         }
+        public void SetFilterFacturasDetallado(FilterFacturasDetallado filterFacturasDetallado)
+        {
+            this.filterFacturasDetallado = filterFacturasDetallado;
+        }
 
         public void showResumeView()
         {
@@ -90,6 +96,11 @@ namespace SAEReports.Controlador
         public void ShowFilterResumeVentas()
         {
             filterResumeVentas.Show();
+            filterResumeVentas.SetSetup();
+        }
+        public void ShowFilterFacturasDetallado()
+        {
+            filterFacturasDetallado.Show();
         }
         public void HideFilterResumeVentas()
         {
@@ -113,10 +124,31 @@ namespace SAEReports.Controlador
             presentationPanel.Tag = inventariosView;
             inventariosView.Show();
         }
+        public void ShowFacturasReport()
+        {
+            filterFacturasDetallado.Show();
+        }
         public void GetFacturasDetalladoReport(DetalladoFacturasVO detalladadoFacturasVo)
         {
-            bussinesLogicModel.DetalladoFacturas(detalladadoFacturasVo);
+            int result = bussinesLogicModel.DetalladoFacturas(detalladadoFacturasVo);
 
+            if (result == 1)
+            {
+                HideFilterResumeVentas();
+                ShowFilterFacturasDetallado();
+                filterFacturasDetallado.SetDataArray(bussinesLogicModel.GetResumenFacturas());
+                filterFacturasDetallado.ShowData();
+            }
+            else if (result == 2)
+            {
+                filterResumeVentas.ShowNotification("Ingresa la clave final de los documentos a consultar");
+                
+            }
+            else if (result == 0)
+            {
+                filterResumeVentas.ShowNotification("Error.");
+            }
+                
         }
     
     }

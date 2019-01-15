@@ -167,6 +167,7 @@
             this.txtAlmacen.Name = "txtAlmacen";
             this.txtAlmacen.Size = new System.Drawing.Size(133, 20);
             this.txtAlmacen.TabIndex = 6;
+            this.txtAlmacen.Text = "1";
             // 
             // label10
             // 
@@ -938,6 +939,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "FilterResumeVentasView";
             this.Text = "FilterResumeVentasView";
+            this.Load += new System.EventHandler(this.FilterResumeVentasView_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
