@@ -26,6 +26,9 @@ namespace SAEReports.Modelo
         private String lineaProd;
         private String ordenaPrimero;
         private String ordenaDespues;
+        private float importe;
+        private float subtotal;
+        private float impuesto;
         private bool filtroProductos;
         private bool filtroServicios;
         private bool filtroKits;
@@ -241,6 +244,30 @@ namespace SAEReports.Modelo
         public String GetCveDocSiguiente()
         {
             return cveDocSiguiente;
+        }
+        public void SetImporte(float importe)
+        {
+            this.importe = importe;
+        }
+        public float GetImporte()
+        {
+            return importe;
+        }
+        public void SetSubtotal(float subtotal)
+        {
+            this.subtotal = subtotal;
+        }
+        public float GetSubtotal()
+        {
+            return subtotal;
+        }
+        public void SetImpuesto(float impuesto)
+        {
+            this.impuesto = impuesto;
+        }
+        public float GetImpuesto()
+        {
+            return impuesto;
         }
     
     }

@@ -37,23 +37,47 @@ namespace SAEReports.Vista
         private void button1_Click(object sender, EventArgs e)
         {
             DetalladoFacturasVO detalladoFacturasVo = new DetalladoFacturasVO();
-
+            int numAlmacen;
             //Datos del objeto DetalladoFacturasVO
-            if(!String.IsNullOrEmpty(txtAlmacen.Text))
-                detalladoFacturasVo.SetAlmacen(int.Parse(txtAlmacen.Text));
-            if(!String.IsNullOrEmpty(txtClientesIni.Text))
-                detalladoFacturasVo.SetClienteInicial(txtClientesIni.Text);
-            if(!String.IsNullOrEmpty(txtCveClienteFin.Text))
-                detalladoFacturasVo.SetClienteFinal(txtCveClienteFin.Text);
-            if(!String.IsNullOrEmpty(txtCveDocInicial.Text))
-                detalladoFacturasVo.SetCveDocInicial(txtCveDocInicial.Text);
-            if(!String.IsNullOrEmpty(txtCveDocFinal.Text))
-                detalladoFacturasVo.SetCveDocFinal(txtCveDocFinal.Text);
-            if(!String.IsNullOrEmpty(txtCveProducto.Text))
-                detalladoFacturasVo.SetCveProducto(txtCveProducto.Text);
-            if(!String.IsNullOrEmpty(txtVendeIni.Text))
-                detalladoFacturasVo.SetCveVendedorInicial(txtVendeIni.Text);
-            if(!String.IsNullOrEmpty(txtVendeFin.Text))
+            if (!String.IsNullOrEmpty(txtAlmacen.Text))
+            {
+                if(int.TryParse(txtAlmacen.Text,out numAlmacen)){
+                    detalladoFacturasVo.SetAlmacen(numAlmacen);
+                }else
+                    detalladoFacturasVo.SetAlmacen(-1);
+                
+            }
+            String strCveClienteIni = "";
+            String strCveClienteFin = "";
+            if (!String.IsNullOrEmpty(txtClientesIni.Text))
+            {
+                
+                for (int i = 0; i < (10 - txtClientesIni.TextLength); i++)
+                {
+                    strCveClienteIni += " ";
+                }
+                strCveClienteIni += txtClientesIni.Text;
+
+                for (int i = 0; i < (10 - txtCveClienteFin.TextLength); i++)
+                {
+                    strCveClienteFin += " ";
+                }
+                strCveClienteFin += txtCveClienteFin.Text;
+            }
+            
+
+            detalladoFacturasVo.SetClienteInicial(strCveClienteIni);
+           
+            detalladoFacturasVo.SetClienteFinal(strCveClienteFin);
+            
+            detalladoFacturasVo.SetCveDocInicial(txtCveDocInicial.Text);
+            
+            detalladoFacturasVo.SetCveDocFinal(txtCveDocFinal.Text);
+           
+            detalladoFacturasVo.SetCveProducto(txtCveProducto.Text);
+          
+            detalladoFacturasVo.SetCveVendedorInicial(txtVendeIni.Text);
+            
                 detalladoFacturasVo.SetCveVendedorFinal(txtVendeFin.Text);
             if(!String.IsNullOrEmpty(txtDescrProd.Text))
                 detalladoFacturasVo.SetDescripcionProducto(txtDescrProd.Text);

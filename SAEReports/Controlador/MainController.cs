@@ -16,7 +16,7 @@ namespace SAEReports.Controlador
        static ResumeView resumeView;
        static VentasView ventasView;
        static FilterResumeVentasView filterResumeVentas;
-       static FilterFacturasDetallado filterFacturasDetallado;
+       static VentasReportView ventasReportView;
        static InventariosView inventariosView;
 
        static BussinesLogicModel bussinesLogicModel;
@@ -41,7 +41,7 @@ namespace SAEReports.Controlador
             resumeView = new ResumeView();
             ventasView = new VentasView();
             filterResumeVentas = new FilterResumeVentasView();
-            filterFacturasDetallado = new FilterFacturasDetallado();
+            ventasReportView = new VentasReportView();
             inventariosView = new InventariosView();
             
 
@@ -53,12 +53,13 @@ namespace SAEReports.Controlador
             resumeView.setController(coordinatorController);
             ventasView.setController(coordinatorController);
             filterResumeVentas.SetController(coordinatorController);
+            ventasReportView.SetController(coordinatorController);
 
             coordinatorController.setVistaPrincipal(mainView);
             coordinatorController.setResumeView(resumeView);
             coordinatorController.setVentasView(ventasView);
             coordinatorController.SetFilterResumeVentas(filterResumeVentas);
-            coordinatorController.SetFilterFacturasDetallado(filterFacturasDetallado);
+            coordinatorController.SetVentasReportView(ventasReportView);
             coordinatorController.setBussinesLogicModel(bussinesLogicModel);
             coordinatorController.SetInventariosView(inventariosView);
 

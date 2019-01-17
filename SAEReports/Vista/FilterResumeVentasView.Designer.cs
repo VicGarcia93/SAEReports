@@ -167,7 +167,6 @@
             this.txtAlmacen.Name = "txtAlmacen";
             this.txtAlmacen.Size = new System.Drawing.Size(133, 20);
             this.txtAlmacen.TabIndex = 6;
-            this.txtAlmacen.Text = "1";
             // 
             // label10
             // 

@@ -17,7 +17,7 @@ namespace SAEReports.Controlador
         VentasView ventasView;
         BussinesLogicModel bussinesLogicModel;
         FilterResumeVentasView filterResumeVentas;
-        FilterFacturasDetallado filterFacturasDetallado;
+        VentasReportView ventasReportView;
         InventariosView inventariosView;
 
         public void setVistaPrincipal(VistaPrincipal vistaPrincipal)
@@ -58,9 +58,9 @@ namespace SAEReports.Controlador
         {
             this.filterResumeVentas = filterResumeVentas;
         }
-        public void SetFilterFacturasDetallado(FilterFacturasDetallado filterFacturasDetallado)
+        public void SetVentasReportView(VentasReportView ventasReportView)
         {
-            this.filterFacturasDetallado = filterFacturasDetallado;
+            this.ventasReportView = ventasReportView;
         }
 
         public void showResumeView()
@@ -98,9 +98,13 @@ namespace SAEReports.Controlador
             filterResumeVentas.Show();
             filterResumeVentas.SetSetup();
         }
-        public void ShowFilterFacturasDetallado()
+        public void ShowVentasReport()
         {
-            filterFacturasDetallado.Show();
+            ventasReportView.Show();
+        }
+        public void HideVentasReport()
+        {
+            ventasReportView.Hide();
         }
         public void HideFilterResumeVentas()
         {
@@ -124,30 +128,46 @@ namespace SAEReports.Controlador
             presentationPanel.Tag = inventariosView;
             inventariosView.Show();
         }
-        public void ShowFacturasReport()
-        {
-            filterFacturasDetallado.Show();
-        }
+        
         public void GetFacturasDetalladoReport(DetalladoFacturasVO detalladadoFacturasVo)
         {
             int result = bussinesLogicModel.DetalladoFacturas(detalladadoFacturasVo);
 
-            if (result == 1)
+            switch (result)
             {
-                HideFilterResumeVentas();
-                ShowFilterFacturasDetallado();
-                filterFacturasDetallado.SetDataArray(bussinesLogicModel.GetResumenFacturas());
-                filterFacturasDetallado.ShowData();
+                case 1:
+                    HideFilterResumeVentas();
+                    ShowVentasReport();
+                    ventasReportView.SetDataArray(bussinesLogicModel.GetResumenFacturas());
+                    ventasReportView.ShowData();
+                    break;
+                case 2:
+                    filterResumeVentas.ShowNotification("La clave inicial del documento no existe.");
+                    break;
+                case 3:
+                    filterResumeVentas.ShowNotification("La clave final del documento no existe.");
+                    break;
+                case 4:
+                    filterResumeVentas.ShowNotification("La clave inicial del cliente no existe.");
+                    break;
+                case 5:
+                    filterResumeVentas.ShowNotification("La clave final del cliente no existe.");
+                    break;
+                case 6:
+                    filterResumeVentas.ShowNotification("La clave inicial del vendedor no existe.");
+                    break;
+                case 7:
+                    filterResumeVentas.ShowNotification("La clave final del vendedor no existe.");
+                    break;
+                case 8:
+                    filterResumeVentas.ShowNotification("El almacén no existe.");
+                    break;
+                case 9:
+                    filterResumeVentas.ShowNotification("No existe información que cumpla el criterio de búsqueda.");
+                    break;
             }
-            else if (result == 2)
-            {
-                filterResumeVentas.ShowNotification("Ingresa la clave final de los documentos a consultar");
                 
-            }
-            else if (result == 0)
-            {
-                filterResumeVentas.ShowNotification("Error.");
-            }
+           
                 
         }
     

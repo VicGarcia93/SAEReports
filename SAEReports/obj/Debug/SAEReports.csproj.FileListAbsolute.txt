@@ -41,4 +41,4 @@ C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports
 C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.VentasView.resources
 C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.VistaPrincipal.resources
 C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.csproj.GenerateResource.Cache
-C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.FilterFacturasDetallado.resources
+C:\Users\Usuario 232\Documents\Visual Studio 2013\Projects\SAEReports\SAEReports\obj\Debug\SAEReports.Vista.VentasReportView.resources

@@ -92,11 +92,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\FilterFacturasDetallado.cs">
+    <Compile Include="Vista\VentasReportView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\FilterFacturasDetallado.Designer.cs">
-      <DependentUpon>FilterFacturasDetallado.cs</DependentUpon>
+    <Compile Include="Vista\VentasReportView.Designer.cs">
+      <DependentUpon>VentasReportView.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FilterResumeVentasView.cs">
       <SubType>Form</SubType>
@@ -151,8 +151,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\FilterFacturasDetallado.resx">
-      <DependentUpon>FilterFacturasDetallado.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\VentasReportView.resx">
+      <DependentUpon>VentasReportView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FilterResumeVentasView.resx">
       <DependentUpon>FilterResumeVentasView.cs</DependentUpon>
