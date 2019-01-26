@@ -79,6 +79,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\BuscaDocumentosVO.cs" />
+    <Compile Include="Modelo\BuscarDocumentoDAO.cs" />
     <Compile Include="Modelo\BussinesLogicModel.cs" />
     <Compile Include="Modelo\ConnectionModel.cs" />
     <Compile Include="Modelo\DetalladoFacturasDAO.cs" />
@@ -91,6 +93,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\BusquedaDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\BusquedaDocumentos.Designer.cs">
+      <DependentUpon>BusquedaDocumentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\VentasReportView.cs">
       <SubType>Form</SubType>
@@ -150,6 +158,9 @@
     <EmbeddedResource Include="Src\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\BusquedaDocumentos.resx">
+      <DependentUpon>BusquedaDocumentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\VentasReportView.resx">
       <DependentUpon>VentasReportView.cs</DependentUpon>

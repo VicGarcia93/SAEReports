@@ -23,6 +23,10 @@ namespace SAEReports.Vista
         {
             this.coordinatorController = coordinatorController;
         }
+        public void SetClaveDocInicial(string cveFactura)
+        {
+            txtCveDocInicial.Text = cveFactura;
+        }
 
         private void label12_Click(object sender, EventArgs e)
         {
@@ -129,6 +133,16 @@ namespace SAEReports.Vista
         public void ShowNotification(String message)
         {
             MessageBox.Show(message);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCveDocIni_Click(object sender, EventArgs e)
+        {
+            coordinatorController.ShowBusquedaDocumentos();
         }
 
       

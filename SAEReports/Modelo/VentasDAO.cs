@@ -14,6 +14,7 @@ namespace SAEReports.Modelo
     }
         public List<DetalladoFacturasVO> BuscarFacturas(String sqlQuery)
         {
+            Console.WriteLine(sqlQuery);
             //String sqlFacturas = "select fac.cve_doc,fac.cve_clpv,fac.status,fac.fecha_doc,fac.cve_vend,fac.doc_ant,fac.num_alma from factf03 fac";
             ConnectionModel conexion = new ConnectionModel();
             conexion.ConnectionFB();

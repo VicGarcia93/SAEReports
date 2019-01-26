@@ -11,19 +11,24 @@ namespace SAEReports.Modelo
         DetalladoFacturasDAO detalladoFacturasDao;
         VentasDAO ventasDao;
         private List<DetalladoFacturasVO> resumenFacturas;
+        private List<DetalladoFacturasVO> consultaFacturas;
         public BussinesLogicModel()
         {
-
+            ventasDao = new VentasDAO();
         }
         public List<DetalladoFacturasVO> GetResumenFacturas()
         {
             return resumenFacturas;
         }
+        public List<DetalladoFacturasVO> GetConsultaFacturas()
+        {
+            return consultaFacturas;
+        }
 
         public int DetalladoFacturas(DetalladoFacturasVO detalladoFacturas)
         {
             detalladoFacturasDao = new DetalladoFacturasDAO();
-            ventasDao = new VentasDAO();
+            
             String sqlFacturasDetalle = @"select fdet.cant,fdet.cve_art,fdet.num_par,fdet.cost,fdet.prec,fdet.impu4, 
                                         (fdet.cant * fdet.cost),(fdet.cant * fdet.prec)
                                         from par_factf03 fdet";
@@ -58,7 +63,7 @@ namespace SAEReports.Modelo
                 {
                     if (ventasDao.validaCveDoc(detalladoFacturas.GetCveDocInicial()))
                     {
-                        filtros.Add("fac03.cve_doc BETWEEN '" + detalladoFacturas.GetCveDocInicial() + @"' AND  
+                        filtros.Add("fac.cve_doc BETWEEN '" + detalladoFacturas.GetCveDocInicial() + @"' AND  
                                             (SELECT factf03.cve_doc FROM factf03 ORDER BY factf03.cve_doc desc ROWS 1)");
                     }
                     else
@@ -215,6 +220,39 @@ namespace SAEReports.Modelo
             Console.WriteLine("Cadena SQL: {0}", sqlFacturasResumen);
             Console.WriteLine("Código: {0}", codError);
             return codError;
+        }
+        public int ConsultaFacturas(string filtro, string query)
+        {
+            string sqlQuery = @"SELECT fac.cve_doc,fac.cve_clpv,fac.status,fac.fecha_doc,fac.cve_vend,fac.doc_ant,fac.num_alma,fac.importe,fac.can_tot,fac.imp_tot4 
+                                        FROM factf03 fac ";
+            int codResult = 0;
+            switch (filtro)
+            {
+                case "Todo":
+                    sqlQuery += " WHERE fac.cve_doc like '%" + query + @"%' OR 
+                                        fac.cve_clpv like '%" + query + @"%' OR
+                                        fac.importe like '%" + query + @"%' OR
+                                        fac.num_alma like '%"+ query + @"%' OR
+                                        fac.fecha_doc like '%" + query + "%'";
+                    
+                    break;
+                case "Clave":
+                    sqlQuery += "WHERE fac.cve_doc like '%" + query + "%'";
+                    break;
+                case "Cliente":
+                    sqlQuery += "WHERE fac.cve_clpv like '%" + query + "%'";
+                    break;
+                case "Fecha de elaboración":
+                    sqlQuery += "WHERE fac.fecha_doc = '" + query + "'";
+                    break;
+                case "Importe":
+                    sqlQuery += "fac.importe like '%" + query + "%'";
+                    break;
+                default:
+                    break;
+            }
+            consultaFacturas = ventasDao.BuscarFacturas(sqlQuery);
+            return codResult;
         }
     }
 }

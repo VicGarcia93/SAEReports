@@ -12,13 +12,22 @@ namespace SAEReports.Controlador
     
     public class CoordinatorController
     {
-        VistaPrincipal vistaPrincipal;
-        ResumeView resumeView;
-        VentasView ventasView;
-        BussinesLogicModel bussinesLogicModel;
-        FilterResumeVentasView filterResumeVentas;
-        VentasReportView ventasReportView;
-        InventariosView inventariosView;
+        private VistaPrincipal vistaPrincipal;
+        private ResumeView resumeView;
+        private VentasView ventasView;
+        private BussinesLogicModel bussinesLogicModel;
+        private FilterResumeVentasView filterResumeVentas;
+        private VentasReportView ventasReportView;
+        private InventariosView inventariosView;
+        private BusquedaDocumentos busquedaDocumentosView;
+
+        private String cveDocInicial;
+        private String cveDocFinal;
+        private String cveClienteInicial;
+        private String cveClienteFinal;
+        private String cveVendedorInicial;
+        private String cveVendedorFinal;
+        private String cveAlmacen;
 
         public void setVistaPrincipal(VistaPrincipal vistaPrincipal)
         {
@@ -61,6 +70,14 @@ namespace SAEReports.Controlador
         public void SetVentasReportView(VentasReportView ventasReportView)
         {
             this.ventasReportView = ventasReportView;
+        }
+        public void SetBusquedaDocumentos(BusquedaDocumentos buscaDocs)
+        {
+            busquedaDocumentosView = buscaDocs;
+        }
+        public BusquedaDocumentos GetBusquedaDocumentos()
+        {
+            return busquedaDocumentosView;
         }
 
         public void showResumeView()
@@ -128,6 +145,16 @@ namespace SAEReports.Controlador
             presentationPanel.Tag = inventariosView;
             inventariosView.Show();
         }
+
+        public void ShowBusquedaDocumentos()
+        {
+            busquedaDocumentosView.ShowDialog();
+        }
+        public void HideBusquedaDocumentos()
+        {
+            busquedaDocumentosView.Hide();
+        }
+
         
         public void GetFacturasDetalladoReport(DetalladoFacturasVO detalladadoFacturasVo)
         {
@@ -169,6 +196,29 @@ namespace SAEReports.Controlador
                 
            
                 
+        }
+
+        public void ConsultaFacturas(string filtro, string query)
+        {
+           int result = bussinesLogicModel.ConsultaFacturas(filtro, query);
+           switch (result)
+           {
+               case 0:
+                   busquedaDocumentosView.SetDataArray(bussinesLogicModel.GetConsultaFacturas());
+                   busquedaDocumentosView.ShowData();
+                   break;
+           }
+           
+        }
+
+        public void SetClaveDocInicial(string cveDocIni)
+        {
+            this.cveDocInicial = cveDocIni;
+            
+        }
+        public void SetClaveDocFinal(String cveDocFinal)
+        {
+            this.cveDocFinal = cveDocFinal;
         }
     
     }

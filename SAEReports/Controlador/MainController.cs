@@ -22,6 +22,7 @@ namespace SAEReports.Controlador
        static BussinesLogicModel bussinesLogicModel;
 
        static CoordinatorController coordinatorController;
+       static BusquedaDocumentos busquedaDocumentosView;
 
         public MainController()
         {
@@ -43,6 +44,7 @@ namespace SAEReports.Controlador
             filterResumeVentas = new FilterResumeVentasView();
             ventasReportView = new VentasReportView();
             inventariosView = new InventariosView();
+            busquedaDocumentosView = new BusquedaDocumentos();
             
 
             bussinesLogicModel = new BussinesLogicModel();
@@ -54,6 +56,7 @@ namespace SAEReports.Controlador
             ventasView.setController(coordinatorController);
             filterResumeVentas.SetController(coordinatorController);
             ventasReportView.SetController(coordinatorController);
+            busquedaDocumentosView.SetController(coordinatorController);
 
             coordinatorController.setVistaPrincipal(mainView);
             coordinatorController.setResumeView(resumeView);
@@ -62,6 +65,7 @@ namespace SAEReports.Controlador
             coordinatorController.SetVentasReportView(ventasReportView);
             coordinatorController.setBussinesLogicModel(bussinesLogicModel);
             coordinatorController.SetInventariosView(inventariosView);
+            coordinatorController.SetBusquedaDocumentos(busquedaDocumentosView);
 
             coordinatorController.showResumeView();
             mainView.ShowDialog();
