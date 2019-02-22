@@ -363,6 +363,7 @@
             this.btnCveDocFin.TabIndex = 6;
             this.btnCveDocFin.Text = "Q";
             this.btnCveDocFin.UseVisualStyleBackColor = true;
+            this.btnCveDocFin.Click += new System.EventHandler(this.btnCveDocFin_Click);
             // 
             // btnCveDocIni
             // 

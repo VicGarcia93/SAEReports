@@ -55,6 +55,12 @@ namespace SAEReports.Vista
             dgvBuscarDoc.DataSource = dtBuscaFacturas;
         }
 
+        private void LimpiarDatos()
+        {
+            txtBuscarDoc.Text = "";
+            dgvBuscarDoc.DataSource = new DataTable();
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -69,7 +75,7 @@ namespace SAEReports.Vista
                 if (!String.IsNullOrEmpty(txtBuscarDoc.Text))
                 {
 
-                    controller.ConsultaFacturas(cmbBuscarDoc.SelectedItem.ToString(), txtBuscarDoc.Text);
+                  controller.ConsultaFacturas(cmbBuscarDoc.SelectedItem.ToString(), txtBuscarDoc.Text);
                 }
             }
             else
@@ -105,7 +111,9 @@ namespace SAEReports.Vista
         private void dgvBuscarDoc_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             string claveFactura = dgvBuscarDoc.Rows[e.RowIndex].Cells[0].Value.ToString();
-            controller.SetClaveDocInicial(claveFactura);
+            //controller.SetClaveDocInicial(claveFactura);
+            controller.SetCveDocumento(claveFactura);
+            LimpiarDatos();
             this.Close();
         }
         

@@ -142,7 +142,13 @@ namespace SAEReports.Vista
 
         private void btnCveDocIni_Click(object sender, EventArgs e)
         {
-            coordinatorController.ShowBusquedaDocumentos();
+            txtCveDocInicial.Text = coordinatorController.ShowBusquedaDocumentos();
+            
+        }
+
+        private void btnCveDocFin_Click(object sender, EventArgs e)
+        {
+            txtCveDocFinal.Text = coordinatorController.ShowBusquedaDocumentos();
         }
 
       

@@ -21,6 +21,8 @@ namespace SAEReports.Controlador
         private InventariosView inventariosView;
         private BusquedaDocumentos busquedaDocumentosView;
 
+        private String cveDocumento;
+
         private String cveDocInicial;
         private String cveDocFinal;
         private String cveClienteInicial;
@@ -28,6 +30,18 @@ namespace SAEReports.Controlador
         private String cveVendedorInicial;
         private String cveVendedorFinal;
         private String cveAlmacen;
+
+        public CoordinatorController()
+        {
+            cveDocInicial = "";
+            cveDocFinal = "";
+            cveClienteInicial = "";
+            cveClienteFinal = "";
+            cveVendedorInicial = "";
+            cveVendedorFinal = "";
+            cveAlmacen = "";
+            cveDocumento = "";
+        }
 
         public void setVistaPrincipal(VistaPrincipal vistaPrincipal)
         {
@@ -146,9 +160,10 @@ namespace SAEReports.Controlador
             inventariosView.Show();
         }
 
-        public void ShowBusquedaDocumentos()
+        public string ShowBusquedaDocumentos()
         {
             busquedaDocumentosView.ShowDialog();
+            return cveDocumento;
         }
         public void HideBusquedaDocumentos()
         {
@@ -200,16 +215,27 @@ namespace SAEReports.Controlador
 
         public void ConsultaFacturas(string filtro, string query)
         {
-           int result = bussinesLogicModel.ConsultaFacturas(filtro, query);
-           switch (result)
-           {
-               case 0:
-                   busquedaDocumentosView.SetDataArray(bussinesLogicModel.GetConsultaFacturas());
-                   busquedaDocumentosView.ShowData();
-                   break;
-           }
-           
+            int result = bussinesLogicModel.ConsultaFacturas(filtro, query);
+            switch (result)
+            {
+                case 0:
+                    busquedaDocumentosView.SetDataArray(bussinesLogicModel.GetConsultaFacturas());
+                    busquedaDocumentosView.ShowData();
+                    break;
+                    
+            }
+          
+
+          
         }
+       
+           
+        //**************************Setters usados en la selección de filtros para reporte de facturas******************
+        public void SetCveDocumento(String cveFactura)
+        {
+            this.cveDocumento = cveFactura;
+        }
+
 
         public void SetClaveDocInicial(string cveDocIni)
         {
@@ -220,6 +246,27 @@ namespace SAEReports.Controlador
         {
             this.cveDocFinal = cveDocFinal;
         }
-    
+
+        public void SetClaveVendedorInicial(String cveVendedorInicial)
+        {
+            this.cveVendedorInicial = cveVendedorInicial;
+        }
+        public void SetClaveVendedorFinal(String cveVendedorFinal)
+        {
+            this.cveVendedorFinal = cveVendedorFinal;
+        }
+        public void SetClaveClienteInicial(String cveClienteInicial)
+        {
+            this.cveClienteInicial = cveClienteInicial;
+        }
+        public void SetClaveClienteFinal(String cveClienteFinal)
+        {
+            this.cveClienteFinal = cveClienteFinal;
+        }
+        public void SetClaveAlmacen(String cveAlmacen)
+        {
+            this.cveAlmacen = cveAlmacen;
+        }
+    //*****************************************************************************************************************
     }
 }
